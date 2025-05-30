@@ -1,0 +1,201 @@
+/* ────────────────────────────────────────────────────────
+   1. Base & Container
+──────────────────────────────────────────────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;    /* matches Framer font */
+  background-color: #f6fdff;               /* very light aqua */
+  color: #0a1a2f;                          /* deep navy */
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ────────────────────────────────────────────────────────
+   2. Navbar
+──────────────────────────────────────────────────────── */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+/* logo */
+.logo {
+  height: 48px;                            /* slightly bigger */
+}
+
+/* links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;                               /* a bit more breathing room */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0a1a2f;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: none;                    /* keep normal case */
+}
+
+/* login button */
+.login-button {
+  padding: 10px 24px;
+  background-color: #0a1a2f;
+  color: #fff;
+  border-radius: 24px;                     /* pill shape */
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+/* ────────────────────────────────────────────────────────
+   3. Hero Section
+──────────────────────────────────────────────────────── */
+.hero {
+  text-align: center;
+  padding: 80px 0 40px;
+}
+
+/* main heading */
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+/* subtext paragraphs */
+.hero p {
+  max-width: 700px;
+  margin: 8px auto;
+  font-size: 1.05rem;
+}
+
+/* CTA button */
+.cta-button {
+  display: inline-block;
+  margin: 32px auto 0;
+  padding: 14px 32px;
+  background-color: #0a1a2f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.cta-button:hover {
+  background-color: #081221;
+}
+
+/* ────────────────────────────────────────────────────────
+   4. Hero Image
+──────────────────────────────────────────────────────── */
+.hero-image {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 32px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+/* ────────────────────────────────────────────────────────
+   5. Responsive Adjustments
+──────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .nav-links {
+    gap: 16px;
+  }
+  .login-button, .cta-button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
+/* styles.css */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Add additional responsive styles as needed */
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  a {
+    color: #bb86fc;
+  }
+
+  /* Add additional dark mode styles as needed */
+}
+/* styles.css */
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+.cta-button-link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
